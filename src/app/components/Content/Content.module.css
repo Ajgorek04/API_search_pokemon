@@ -1,0 +1,12 @@
+.content {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.input {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
+}

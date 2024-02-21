@@ -1,0 +1,7 @@
+.pokemon {
+  text-align: center;
+}
+
+.pokemon::first-letter {
+  text-transform: uppercase;
+}
