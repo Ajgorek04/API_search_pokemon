@@ -1,9 +1,11 @@
 .content {
   margin-top: auto;
   margin-bottom: auto;
+  text-align: center;
 }
 
 .input {
+  margin: 2rem;
   background: none;
   border: 1px solid #fff;
   color: #fff;

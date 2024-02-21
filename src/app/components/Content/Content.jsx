@@ -8,9 +8,8 @@ export function Content() {
 
   return (
     <section className={styles.content}>
-      <input className={styles.input} type="text" />
-
       <ShowPokemon pokemonName={pokemonName} />
+      <input className={styles.input} type="text" />
     </section>
   );
 }

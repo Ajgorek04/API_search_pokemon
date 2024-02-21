@@ -1,7 +1,20 @@
 .pokemon {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.pokemon::first-letter {
+.pokemon img {
+  width: 500px;
+}
+
+.pokemon h1::first-letter {
   text-transform: uppercase;
+}
+.pokemon p:first-letter {
+  text-transform: uppercase;
+}
+
+.pokemon ul {
+  list-style-type: none;
 }
