@@ -21,13 +21,13 @@ export function ShowPokemon({ pokemonName }) {
 
   return (
     <div className={styles.pokemon}>
+      <h1>{pokemonData.name}</h1>
       <img
         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
         alt="pokemon"
       />
-      <h1>{pokemonData.name}</h1>
-      <br />
       <h2>Types:</h2>
+      <br />
       {pokemonData.types && (
         <ul>
           {pokemonData.types.map((type, index) => (
@@ -36,10 +36,11 @@ export function ShowPokemon({ pokemonName }) {
         </ul>
       )}
       <h2>Abilities</h2>
+      <br />
       {pokemonData.abilities && (
         <ul>
-          {pokemonData.abilities.map((ability, index) => (
-            <li key={index}>{ability.name}</li>
+          {pokemonData.abilities.map((abilit, index) => (
+            <li key={index}>{abilit.ability.name}</li>
           ))}
         </ul>
       )}
