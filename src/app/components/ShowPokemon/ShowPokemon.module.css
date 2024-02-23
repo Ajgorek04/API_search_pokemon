@@ -4,6 +4,11 @@
   flex-direction: column;
 }
 
+.pokemonInfo {
+  display: flex;
+  justify-content: center;
+}
+
 .pokemon img {
   width: 500px;
 }
