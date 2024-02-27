@@ -14,6 +14,7 @@ export function ShowPokemon({ pokemonName }) {
           `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
         );
         setPokemonData(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error("Error fetching Pokemon data:", error);
       }
@@ -50,6 +51,11 @@ export function ShowPokemon({ pokemonName }) {
               ))}
             </ul>
           )}
+        </InfoBox>
+        <InfoBox>
+          <h2>Height</h2>
+          <br />
+          {pokemonData.height}
         </InfoBox>
       </div>
     </div>
