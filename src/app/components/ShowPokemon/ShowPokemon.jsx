@@ -55,7 +55,12 @@ export function ShowPokemon({ pokemonName }) {
         <InfoBox>
           <h2>Height</h2>
           <br />
-          {pokemonData.height}
+          {pokemonData.height} decimetres
+        </InfoBox>
+        <InfoBox>
+          <h2>Weight</h2>
+          <br />
+          {pokemonData.weight} hectograms
         </InfoBox>
       </div>
     </div>

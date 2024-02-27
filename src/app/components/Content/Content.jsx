@@ -10,23 +10,25 @@ export function Content() {
   return (
     <section className={styles.content}>
       <ShowPokemon pokemonName={pokemonName} />
-      <input
-        className={styles.input}
-        type="text"
-        value={inputValue}
-        onChange={(e) => {
-          setInputValue(e.target.value);
-        }}
-      />
-      <button
-        className={styles.button}
-        onClick={() => {
-          setPokemonName(inputValue.toLowerCase());
-          setInputValue("");
-        }}
-      >
-        Search
-      </button>
+      <div className={styles.search}>
+        <input
+          className={styles.input}
+          type="text"
+          value={inputValue}
+          onChange={(e) => {
+            setInputValue(e.target.value);
+          }}
+        />
+        <button
+          className={styles.button}
+          onClick={() => {
+            setPokemonName(inputValue.toLowerCase());
+            setInputValue("");
+          }}
+        >
+          Search
+        </button>
+      </div>
     </section>
   );
 }
