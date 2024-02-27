@@ -4,4 +4,5 @@
   border: 2px solid #fff;
   border-radius: 0.5rem;
   padding: 0.5rem 0rem;
+  min-height: 100px;
 }
