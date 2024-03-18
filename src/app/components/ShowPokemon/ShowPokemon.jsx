@@ -9,6 +9,10 @@ export function ShowPokemon({ pokemonName }) {
 
   useEffect(() => {
     const fetchPokemonData = async () => {
+      if (pokemonName === "") {
+        alert("Enter pokemon name");
+        return;
+      }
       try {
         const response = await axios.get(
           `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
@@ -16,6 +20,7 @@ export function ShowPokemon({ pokemonName }) {
         setPokemonData(response.data);
         console.log(response.data);
       } catch (error) {
+        alert("Wrong pokemon name");
         console.error("Error fetching Pokemon data:", error);
       }
     };
